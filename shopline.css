@@ -30,14 +30,14 @@
 }
 
 
-
 .navbar1 {
     justify-content: center;
     display: flex;
-    position: sticky;
+    top: 0;
     width: 100%;
-    text-align: right;
     background-color: #eceef4;
+    position: sticky;
+    border: 5px solid burlywood;
 }
 
 
@@ -54,13 +54,11 @@
     padding: 15px;
 }
 
-.navbar1 img {
-    width: 150px;
-}
+.navbar1 .btn {}
 
 .text ul {
     list-style: none;
-    border: 2px solid red;
+    border: 2px solid pink;
 }
 
 .box {
@@ -87,6 +85,10 @@
     content: "\2022";
     color: #2a71e3;
     font-size: 30px;
+}
+
+li a {
+    text-decoration: none;
 }
 
 li a {
@@ -131,6 +133,7 @@ li a {
 
 .head .left {
     width: 35vw;
+    font-size: 20px;
 }
 
 .head .right {
@@ -140,6 +143,7 @@ li a {
 .right img {
     width: 100%;
     border-radius: 50% 50% 0 0;
+    border: 2px salmon;
 }
 
 .content {
@@ -160,7 +164,7 @@ li a {
 }
 
 .wrap {
-    width: 960px;
+    width: 100vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -168,28 +172,28 @@ li a {
 }
 
 .wrap .item {
+    width: 70vw;
     display: flex;
     margin: auto;
+    padding: 20px;
+    border: 2px solid yellowgreen;
+    justify-content: space-evenly;
 }
+
 
 
 .item:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-.item .pic {
-    width: 470px;
-    margin: 5px;
-}
-
-.item.pic img {
-    width: 100%;
-}
-
 .item .text {
     width: 470px;
     margin: 30px;
+}
 
+.item img {
+    width: 100%;
+    border: 2px solid red;
 }
 
 .brand {
@@ -238,29 +242,21 @@ footer {
 }
 
 footer .wrap {
-    width: 60%;
+    width: 70%;
     display: flex;
     color: white;
+    margin: 20px 0;
 }
 
 footer .wrap .top {
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-footer .wrap .top ul {
-    display: flex;
-    list-style: none;
-}
-
-footer .wrap .top li {
-    margin: 0 20px 0 0;
+    color: white;
 }
 
 footer .wrap .mid {
     border-top: white solid 1px;
-    border-bottom: white solid 1px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -273,12 +269,43 @@ footer .wrap .mid ul {
 
 footer .wrap .mid li {
     margin: 10px 0;
+    color: #75808D;
+}
+
+footer .wrap .mid li:first-child {
+    font-weight: bold;
+    color: white;
+}
+
+footer .wrap .top ul {
+
+    display: flex;
+    list-style: none;
+}
+
+footer .wrap .top li {
+    margin: 10px 10px 0 0;
+}
+
+footer .wrap .infobtn {
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer .wrap .infobtn button {
+    background-color: #E3B54C;
+    color: #00142d;
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
 }
 
 footer .wrap .buttom {
+    border-top: white solid 1px;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
 }
 
 footer .wrap .buttom ul {
